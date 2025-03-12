@@ -7,35 +7,35 @@
     <meta name="author" content="Parishi Jain">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Parishi's professional website">
-    <title>Parishi</title>
-
+    <title>Parishi Jain</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body  style="font-family:Arial">
-    <header style="color:rgba(8, 8, 157, 0.835); background:rgb(213, 239, 247)">
-        <h1>Parishi Jain</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="./cv.html">CV</a>
-            <a href="./contact.html">Contact me</a>
-            <a href="./fun.html">For fun</a>
+<body>
+    <header>
+        <h1 id="webname">Parishi Jain</h1>
+        <nav class="navlinks">
+            <a href="../index.html">home!</a>
+            <a href="./cv.html">resume!</a>
+            <a href="./contact.html">contact me!</a>
+            <a href="./fun.html">about me!</a>
         </nav>
-    </header>
     <div class = "main">
         <h2>Contact Me</h2>
-        <form action="submit.php" method="post">
-            <div>
-                <label for = "name">Your name (required):</label>
-                <input type = "text" id = "name" name="name" required>
-                <label for = "email">Your email:</label>
-                <input type = "email" id = "email" name = "email" required>
-            </div>
-            <div>
-                <label for = "comment">Your comment:</label><br>
-                <textarea id="comment" name = "comment" rows = "6" cols "50" required></textarea>
-            </div>
-            <input type = "submit" value = "SEND">
+        <form>
+            <label for = "name">Your name (required):</label>
+            <input type = "text" id = "name" name="name" required><br>
+        <br>
+            <label for = "email">Your email:</label>
+            <input type = "email" id = "email" name = "email"><br>
+        <br>
+            <label for = "comment">Your comment:</label>
+            <textarea id="comment" name = "comment" rows = "6" cols="50" required></textarea><br>
+        <br>
+            <button type = "submit">SEND</button>
         </form>
-
         <table>
         <tr>
             <th><strong>Contact Method Description</strong></th>
@@ -58,5 +58,7 @@
     <footer>
         <p>&copy; 2024 designed and coded by Parishi Jain.</p>
     </footer>
+    </header>
+
 </body>
 </html>
