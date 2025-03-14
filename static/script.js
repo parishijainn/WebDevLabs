@@ -68,6 +68,12 @@ function greetingFunc(){
     document.getElementById("greeting").innerHTML = greeting + ", I am Parishi Jain!";
 }
 
-if (window.location.href.includes("index.html")){
-    greetingFunc();
+// if (window.location.href.includes("index.html")){
+//     greetingFunc();
+// }
+
+if (window.location.href.includes("index.html")) {
+    document.addEventListener("DOMContentLoaded", function() {
+        greetingFunc();
+    });
 }
