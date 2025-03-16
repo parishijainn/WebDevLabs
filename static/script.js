@@ -65,11 +65,8 @@ function greetingFunc(){
         console.log("Good night!");
         greeting = "Good night";
     }
+
     document.getElementById("greeting").innerHTML = greeting + ", I am Parishi Jain!";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.href.includes("index.html")) {
-        greetingFunc();
-    }
-});
+greetingFunc();
