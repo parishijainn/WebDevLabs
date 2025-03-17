@@ -44,8 +44,8 @@ function findTheBanana(array, arrayName) {
     });
 }
 
-// findTheBanana(L1, "first");
-// findTheBanana(L2, "second");
+findTheBanana(L1, "first");
+findTheBanana(L2, "second");
 
 function greetingFunc(){
     var d = new Date()
