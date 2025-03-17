@@ -39,7 +39,7 @@ var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 function findTheBanana(array, arrayName) {
     array.forEach(function(currentValue, index, arr) {
         if (currentValue == "Banana") {
-        alert("We found a Banana in the" + arrayName + " array");
+        alert("We found a Banana in the " + arrayName + " array");
         }
     });
 }
