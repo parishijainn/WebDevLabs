@@ -60,3 +60,24 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #836393;
 }
+
+button {
+    background-color:#d0c1fa;
+    color: #836393;
+    border: none;
+    border-radius: 5px;
+}
+
+#funlist{
+    display: none;
+}
+
+#longBio {
+    display: none;
+}
+
+.readmoreorless{
+    background-color: #d0c1fa;
+    color: #836393;
+    border: none;
+}
