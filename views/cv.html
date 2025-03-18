@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="../static/jquery-3.7.1.min.js" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="author" content="Parishi Jain">
@@ -15,7 +16,7 @@
     <script defer src="../static/script.js"></script>
 
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Parishi Jain</h1>
         <nav class="navlinks">
@@ -52,7 +53,7 @@
         <p><a href="../static/resume.pdf">My resume (pdf)</a></p>
     </div>
     <footer>
-        <p>&copy; 2025 designed and coded by Parishi Jain. </p>
+        <p id="copyYear"> Designed and coded by Parishi Jain &copy</p>
     </footer>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="../static/jquery-3.7.1.min.js" ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <meta name="author" content="Parishi Jain">
@@ -13,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script defer src="../static/script.js" ></script>
+    <script src="../static/jquery-3.7.1.min.js"></script>
+
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Parishi Jain</h1>
         <nav class="navlinks">
@@ -25,15 +28,18 @@
         </nav>
     <div class = "main">
         <h2>Contact Me</h2>
-        <form>
+        <form id="contactForm" action = "mailto:parishij@andrew.cmu.edu" method = "post" enctype = "text/plain">
             <label for = "name">Your name (required):</label>
             <input type = "text" id = "name" name="name" required><br>
+            <span id = "nameError" class="error-message"></span>
         <br>
             <label for = "email">Your email:</label>
             <input type = "email" id = "email" name = "email"><br>
+            <span id = "emailError" class="error-message"></span>
         <br>
             <label for = "comment">Your comment:</label>
             <textarea id="comment" name = "comment" rows = "6" cols="50" required></textarea><br>
+            <span id = "commentError" class="error-message"></span>
         <br>
             <button type = "submit">SEND</button>
         </form>
@@ -57,7 +63,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 designed and coded by Parishi Jain.</p>
+        <p id="copyYear"> Designed and coded by Parishi Jain &copy</p>
     </footer>
     </header>
 
