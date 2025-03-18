@@ -109,6 +109,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const emailError = document.getElementById("emailError");
         const commentError = document.getElementById("commentError");
 
+        const validationMessage = document.getElementById("validationMessage");
+
         function showError(input, errorElement) {
             if (!input.validity.valid) {
                 errorElement.textContent = input.validationMessage;
@@ -119,14 +121,46 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        form.addEventListener("submit", function (event) {
+        function validateForm() { 
+            validationMessage.innerHTML = ""; 
+            validationMessage.className = ""; 
+
+            if (!nameInput.value) {
+                nameInput.setCustomValidity("Don't forget to enter your name!");
+            } else {
+                nameInput.setCustomValidity("");
+            }
+
+            if (!emailInput.value) {
+                emailInput.setCustomValidity("Don't forget to enter your email!");
+            } else {
+                emailInput.setCustomValidity("");
+            }
+
+            if (!commentInput.value) {
+                commentInput.setCustomValidity("Don't forget to enter your comment!");
+            } else {
+                commentInput.setCustomValidity("");
+            }
+
             showError(nameInput, nameError);
             showError(emailInput, emailError);
             showError(commentInput, commentError);
 
-            if (!form.checkValidity()) {
-                event.preventDefault();
+            if (!nameInput.checkValidity() || !emailInput.checkValidity() || !commentInput.checkValidity()) {
+                validationMessage.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+                validationMessage.className = "error-message";
+                return false;
             }
+
+            validationMessage.innerHTML = "You have submitted the form successfully! Thank you for reaching out!";
+            validationMessage.className = "success";
+            return false; 
+        }
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            validateForm();
         });
     }
 });

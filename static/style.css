@@ -81,3 +81,17 @@ button {
     color: #836393;
     border: none;
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
