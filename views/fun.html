@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="../static/jquery-3.7.1.min.js" ></script>
+    <script src="../static/jquery-3.7.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parishi Jain</title>
     <meta name="author" content="Parishi Jain">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Parishi's professional website">
-    <title>Parishi Jain</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <script defer src="../static/script.js"></script>
-    
 </head>
 <body onload="addYear()">
     <header>
@@ -26,19 +24,36 @@
             <a href="./fun.html">about me!</a>
         </nav>
     </header>
-    <div class = "main">
-        <h2>Things I love to do for fun</h2>
-        <button id="clickme" onclick="showList()"> Click to see...</button>
-        <ul id="funlist">
-            <li>Going on beach walks</li>
-            <li>Listening to music</li>
-            <li>Reading</li>
-            <li>Baking</li>
-            <li>Watching shows/movies with my family</li>
-        </ul>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I love to do for fun</h2>
+            <ul id="funlist">
+                <li>Going on beach walks</li>
+                <li>Listening to music</li>
+                <li>Reading</li>
+                <li>Baking</li>
+                <li>Watching shows/movies with my family</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/fun_image.jpeg" alt="Fun moment" class="funIMG">
+        </div>
+        <div class="item3">
+            <iframe src="https://www.youtube.com/embed/9r5KQoOMQJQ" 
+                title="James Charles Falling Face First in Sister Squad Vlog" 
+                class="funVideo" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="item4">
+            <div class="container" id="item4">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button id="getAdviceButton" onclick="getAdvice()">Get Advice</button>
+            </div>            
+        </div>
     </div>
     <footer>
-        <p id="copyYear"> Designed and coded by Parishi Jain &copy</p>
+        <p id="copyYear"> Designed and coded by Parishi Jain &copy;</p>
     </footer>
 </body>
 </html>
