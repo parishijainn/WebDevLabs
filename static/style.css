@@ -150,157 +150,23 @@ button {
 button:hover {
     background-color: #836393;
     color: white;
-}
+} 
 
-
-
-/* 
-* { 
-    font-family: 'Roboto';
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    padding: 5px;
-    margin: 5px;
-}
-
-header {
-    color: rgba(97, 8, 157, 0.835);
-}
-
-#webname {
-    background-color: #d0c1fa;
-}
-
-.navlinks a {
-    text-decoration: none;
+.nav-links a {
+    text-decoration: none; 
     color: #553568;
     margin-right: 15px;
     font-size: 16px;
     font-weight: bold;
 }
 
-.navlinks {
-    margin-right: 15px;
-    font-size: 16px;
+.nav-links a:hover {
+    color: #4f0872; 
+    text-decoration: underline;
+}
+
+.nav-links a.active {
+    color: #553568; 
     font-weight: bold;
+    text-decoration: underline;
 }
-
-th {
-    padding: 12px 20px;
-    background-color: #d0c1fa;
-    color: #836393;
-    width: fit-content;
-}
-
-tr:nth-child(even) {
-    background-color: lightgray;
-}
-
-form * {
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-form input[type="submit"] {
-    background-color: #553568;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-size: 16px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #836393;
-}
-
-button {
-    background-color: #d0c1fa;
-    color: #836393;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #836393;
-    color: white;
-}
-
-.mainLayout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
-}
-
-.item1, .item2, .item3, .item4 {
-    flex: 1 1 400px; 
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.item3 {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.video-container {
-    flex: 1; 
-}
-
-.funVideo {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-}
-
-.funIMG {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    border-radius: 100%;
-}
-
-.container {
-    display: inline-block;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.container h2 {
-    font-size: 1.5em;
-    color: #553568;
-}
-
-.container p {
-    color: #836393;
-    font-size: 1.1em;
-}
-
-button {
-    background-color: #d0c1fa;
-    color: #836393;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #836393;
-    color: white;
-} */
